@@ -1,6 +1,6 @@
 class Account:
 
-    def __init__(self,title,balance):
+    def __init__(self,title=None,balance=0):
         
         self.title=title
         self.ac_balance=balance
@@ -9,7 +9,7 @@ class Account:
     
 class SavingsAccount(Account):
 
-    def __init__(self,title,balance,interest_rate):
+    def __init__(self,title=None,balance=0,interest_rate=0):
     
         super().__init__(title,balance)
     
